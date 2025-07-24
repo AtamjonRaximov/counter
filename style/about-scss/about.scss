@@ -1,0 +1,96 @@
+@import "../global-css/global";
+
+.brack {
+  a {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+    box-shadow: 0px 0px 10px var(--shadow);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0.3px solid white;
+  }
+
+  margin-bottom: 50px;
+  margin-top: 110px;
+}
+
+section {
+  margin-bottom: 80px;
+
+  .states-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .states-flag-box {
+      max-height: 400px;
+    }
+
+    li {
+      flex-grow: 1;
+      flex-basis: 540px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .states-text-box {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-left: 10px;
+      padding-bottom: 20px;
+      border-radius: 20px;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--black);
+      }
+
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 40px;
+
+        .text {
+          li {
+            margin-bottom: 5px;
+            display: flex;
+            color: var(--black);
+            gap: 10px;
+          }
+        }
+      }
+
+      .chegaradosh-box {
+        margin-top: 40px;
+
+        li {
+          margin: 5px;
+          margin-top: 10px;
+          width: 100px;
+          display: inline;
+          color: var(--black);
+
+          a {
+            padding: 4px 8px;
+            box-shadow: 0px 0px 10px var(--shadow);
+            border: 1px solid rgb(255, 255, 255);
+            color: var(--black);
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+

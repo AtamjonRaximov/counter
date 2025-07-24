@@ -1,0 +1,163 @@
+@import "../global-css/global";
+
+section {
+  margin-bottom: 100px;
+}
+form {
+  background: var(--white);
+  margin: 30px 0px 30px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .search-box {
+      position: relative;
+
+      .search-input {
+        max-width: 330px;
+        height: 45px;
+        font-size: clamp(14px, 4vw, 16px);
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 30px var(--shadow);
+        padding: 0px 20px 0px 50px;
+        background: var(--white);
+        color: var(--black);
+
+        &::placeholder {
+          font-size: clamp(14px, 4vw, 16px);
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        font-size: clamp(14px, 4vw, 16px);
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--black);
+      }
+
+      .error-text {
+        position: absolute;
+        bottom: -22px;
+        font-size: clamp(10px, 3vw, 14px);
+        left: 0px;
+        color: red;
+      }
+    }
+
+    .region-box {
+      min-width: 150px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 20;
+      background: var(--white);
+
+      span {
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        .region-name {
+          font-size: clamp(18px, 4vw, 14px);
+          padding: 10px 35px 10px 18px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 30px var(--shadow);
+          color: var(--black);
+        }
+
+        i {
+          position: absolute;
+          top: 35%;
+          right: 10px;
+          transition: 0.5s;
+          color: var(--black);
+        }
+      }
+
+      .regions {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 50%;
+        transform: translateX(50%);
+        box-shadow: 0px 0px 30px var(--shadow);
+        padding: 10px 20px;
+        margin-top: 5px;
+        row-gap: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        transition: 0.5s;
+        background: var(--white);
+
+        li {
+          width: 100%;
+
+          p {
+            text-align: center;
+            height: auto;
+            border-radius: 5px;
+            font-size: clamp(16px, 4vw, 14px);
+            color: var(--black);
+
+            &:hover {
+              background: rgb(117, 117, 117);
+            }
+          }
+        }
+      }
+
+      &:hover .regions {
+        visibility: visible;
+      }
+
+      &:hover span i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.flag-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3.5rem;
+
+  li {
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px var(--shadow);
+    transition: 0.1s;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 180px;
+    }
+    .child {
+      padding: 10px 5px 50px 10px;
+      h4,
+      p {
+        color: var(--black);
+      }
+      h4 {
+        margin-bottom: 10px;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
