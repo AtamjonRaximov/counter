@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>States</title>
+    <link rel="stylesheet" href="./Nunito/Nunito.css" />
+    <link rel="stylesheet" href="./style/index-css/index.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+  </head>
+  
+  <body>
+    <!-- Header top -->
+    <header>
+      <!-- Nav top -->
+      <nav>
+        <div class="container">
+          <ul class="navbar-ul">
+            <li>
+              <a href="./index.html">
+                <h3>States</h3>
+              </a>
+            </li>
+            <li id="dark-btn" class="dark-btn">
+              <i id="dark-icon" class="fa-solid fa-moon"></i>
+              <span id="dark-text">Dark</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- form top -->
+      <form action="">
+        <div class="container">
+          <ul>
+            <li>
+              <div class="search-box">
+                <input
+                  id="search-input"
+                  class="search-input"
+                  type="search"
+                  placeholder="search states..."
+                  autocomplete="off"
+                />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <span id="error-text" class="error-text" style="display: none"
+                  >Bunday davlat topilmadi... 😊</span
+                >
+              </div>
+            </li>
+            <li>
+              <div class="region-box">
+                <span>
+                  <p class="region-name">Region</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+                <ul class="regions">
+                  <li class="region">
+                    <p data-region-name="All">All</p>
+                  </li>
+                  <li class="region">
+                    <p data-region-name="Asia">Asia</p>
+                  </li>
+                  <li class="region">
+                    <p data-region-name="Europe">Europe</p>
+                  </li>
+                  <li class="region">
+                    <p data-region-name="Americas">Americas</p>
+                  </li>
+                  <li class="region">
+                    <p data-region-name="Africa">Africa</p>
+                  </li>
+                  <li class="region">
+                    <p data-region-name="Oceania">Oceania</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+
+      <!-- section top -->
+      <section>
+        <div class="container">
+          <ul id="states-box" class="flag-box">
+
+
+
+
+
+
+            
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer top -->
+      <footer>
+        <h6>Diyorbek Primqulov</h6>
+      </footer>
+    </header>
+
+    <div id="loader-bagraund" class="loader-bagraund hidden">
+      <span class="loader"></span>
+    </div>
+
+    <a href="" target="_blank"></a>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/global.js"></script>
+  <script src="./js/index.js"></script>
+</html>
